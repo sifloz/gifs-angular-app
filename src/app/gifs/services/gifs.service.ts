@@ -12,7 +12,11 @@ export class GifsService {
   }
 
   searchGifsHandler(query: string) {
-    this._historyLog.unshift(query);
+    query = query.trim().toLowerCase()
+    if (!this._historyLog.includes(query)) {
+      this._historyLog.unshift(query);
+    }
+    this._historyLog = this._historyLog.splice(0, 10);
   }
 
   constructor() { }

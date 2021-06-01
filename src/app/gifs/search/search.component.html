@@ -1,2 +1,7 @@
 <h4>Buscar</h4>
-<input type="text" placeholder="Buscar gifs..." />
+<input
+  type="text"
+  placeholder="Buscar gifs..."
+  (keyup.enter)="searchHandler()"
+  #txtSearch
+>

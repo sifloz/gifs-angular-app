@@ -1,9 +1,9 @@
-<div class="bg-black border-r-2 p-4 h-full min-h-full">
+<div class="bg-black border-r-2 p-4 h-full min-h-full w-56">
   <h4 class="text-white">Gifs App</h4>
   <hr class="text-white my-4" />
-  <ul class="list-none">
-    <li class="mb-4">
-      <a href="#" class="bg-white p-2 rounded">Dashboard</a>
+  <ul class="list-none w-full">
+    <li *ngFor="let item of historyLog" class="mb-4 w-full">
+      <a href="#" class="bg-white p-2 rounded block">{{ item }}</a>
     </li>
   </ul>
 </div>

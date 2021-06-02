@@ -13,7 +13,8 @@ export class SidebarComponent {
 
   constructor(private gifsSerive: GifsService) { }
 
-  ngOnInit(): void {
+  searchHandler(item: string) {
+    this.gifsSerive.searchGifsHandler(item);
   }
 
 }

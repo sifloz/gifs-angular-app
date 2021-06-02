@@ -1,1 +1,3 @@
-Lorem ipsum dolor sit amet
+<div *ngFor="let gif of results">
+    <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+</div>
